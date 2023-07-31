@@ -1,0 +1,11 @@
+<button (mouseenter)="surClick('temps')" (mouseleave)="surClick('')" class="btn btn-info">Temps</button>
+
+<button (mouseenter)="surClick('detail')" (mouseleave)="surClick('')" class="btn btn-info">Détail</button>
+<div *ngIf="affichage=='detail'" >
+  <p class="card-text">Difficulté: {{ difficulte }} </p>
+  <p class="card-text">Coût: {{ cout }} </p>
+</div>
+<div *ngIf="affichage=='temps'" >
+  <p class="card-text">Temps préparation: {{ preparation}} min</p>
+  <p class="card-text">Temps cuisson: {{ cuisson }} min</p>
+</div>
