@@ -13,6 +13,12 @@ import { CategorieComponent } from './categorie/categorie.component';
 import { CategorieFormComponent } from './categorie-form/categorie-form.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {firstValueFrom, isObservable, Observable} from "rxjs";
+import { OneRecipeComponent } from './one-recipe/one-recipe.component';
+import { QuantityPipe } from './quantity.pipe';
+import { EuroPipe } from './euro.pipe';
+import { IngredientComponent } from './ingredient/ingredient.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +29,12 @@ import {firstValueFrom, isObservable, Observable} from "rxjs";
     RecipeFormComponent,
     ListRecipeComponent,
     CategorieComponent,
-    CategorieFormComponent
+    CategorieFormComponent,
+    OneRecipeComponent,
+    QuantityPipe,
+    EuroPipe,
+    IngredientComponent,
+
   ],
   imports: [
     BrowserModule,

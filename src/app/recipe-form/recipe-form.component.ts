@@ -19,6 +19,8 @@ export class RecipeFormComponent {
   }
   categories: any;
 
+
+
   //Récupération des paramètres pour faire la modification
   id:any
   recette = {
@@ -33,6 +35,21 @@ export class RecipeFormComponent {
     photo: '',
 
   }
+  ingredients: Array<any>=[];
+
+  addIngr(event:any)
+  {
+    this.ingredients.push({
+      quantite:event.quantite,
+      nom:event.nom,
+      unite:event.unite
+
+
+    })
+
+
+  }
+
 
   formulaire(form: NgForm) {
     console.log(form.value.id);

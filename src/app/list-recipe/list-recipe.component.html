@@ -10,7 +10,7 @@
         <p class="card-text">{{ recette.description }}</p>
     </div>
     <div class="card-body">
-        <a class="card-link btn btn-success">Voir la recette</a>
+        <a class="card-link btn btn-success"  [routerLink]="['/oneRecipe',recette.id]">Voir la recette</a>
         <a [routerLink]="['/formRecipe',recette.id]" class="card-link btn btn-success">Modifier</a>
         <a (click)="delete(recette.id)" class="card-link btn btn-success">Supprimer</a>
     </div>
